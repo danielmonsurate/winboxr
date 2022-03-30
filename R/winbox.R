@@ -23,8 +23,8 @@
 #'
 winbox <- function(session = shiny::getDefaultReactiveDomain(),
                    inputId,
+                   root = "body",
                    title = NULL,
-                   root = NULL,
                    background = NULL,
                    border_width = NULL,
                    width = NULL,
