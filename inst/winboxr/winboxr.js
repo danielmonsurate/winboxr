@@ -2,6 +2,7 @@ $(function () {
   Shiny.addCustomMessageHandler('create-winbox', function (data) {
     new WinBox({
         id: data.id,
+        class: data.class,
         root: document.querySelector(data.root),
         title: data.title,
         background: data.background,

@@ -23,6 +23,7 @@
 #'
 winbox <- function(session = shiny::getDefaultReactiveDomain(),
                    inputId,
+                   class = NULL,
                    root = "body",
                    title = NULL,
                    background = NULL,
@@ -43,6 +44,7 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
 
   message <- dropNulls(
     list(id = inputId,
+         class = class,
          title = title,
          root = root,
          background = background,

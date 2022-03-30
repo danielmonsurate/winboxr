@@ -4,3 +4,17 @@ html {
 body {
   min-height: 100%;
 }
+
+.winbox.my-theme{
+    background: #fff;
+}
+.winbox.my-theme .wb-body {
+    color: #fff;
+    background: #131820;
+}
+.winbox.my-theme .wb-title {
+    color: #000;
+}
+.winbox.my-theme .wb-icon {
+    filter: invert(1);
+}

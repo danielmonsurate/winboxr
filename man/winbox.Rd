@@ -7,8 +7,9 @@
 winbox(
   session = shiny::getDefaultReactiveDomain(),
   inputId,
+  class = NULL,
+  root = "body",
   title = NULL,
-  root = NULL,
   background = NULL,
   border_width = NULL,
   width = NULL,
@@ -30,9 +31,9 @@ winbox(
 
 \item{inputId}{The id of the winbox.}
 
-\item{title}{The title of the winbox.}
-
 \item{root}{The root element to create the winbox in.}
+
+\item{title}{The title of the winbox.}
 
 \item{background}{The background colour of the winbox.}
 
