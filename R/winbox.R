@@ -2,6 +2,7 @@
 #'
 #' @param session The session object.
 #' @param inputId The id of the winbox.
+#' @param class The class of the winbox for themes.
 #' @param title The title of the winbox.
 #' @param root The root element to create the winbox in.
 #' @param background The background colour of the winbox.

@@ -4,7 +4,7 @@ Title: An R wrapper for the WinBox.js window manager
 Version: 0.1.0
 Author: Daniel Monsurate
 Maintainer: Daniel Monsurate <email@email.com>
-Description: Use the winbox.js window manager in Shiny dashboards
+Description: Use the winbox.js window manager in Shiny dashboards.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true

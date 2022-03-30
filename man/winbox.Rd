@@ -31,6 +31,8 @@ winbox(
 
 \item{inputId}{The id of the winbox.}
 
+\item{class}{The class of the winbox for themes.}
+
 \item{root}{The root element to create the winbox in.}
 
 \item{title}{The title of the winbox.}
