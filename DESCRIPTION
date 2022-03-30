@@ -1,11 +1,10 @@
 Package: winboxr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: An R wrapper for the WinBox.js window manager
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Daniel Monsurate
+Maintainer: Daniel Monsurate
+Description: Use the winbox.js window manager in Shiny dashboards.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
