@@ -40,9 +40,9 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
                    html = NULL,
                    ui = NULL) {
 
-  ns <- session$ns
+
   message <- dropNulls(
-    list(id = ns(inputId),
+    list(id = inputId,
          title = title,
          root = root,
          background = background,
@@ -62,7 +62,7 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
 
   session$sendCustomMessage("create-winbox", message)
 
-  shiny::insertUI(selector = sprintf("#%s > .wb-body", ns(inputId)),
+  shiny::insertUI(selector = sprintf("#%s > .wb-body", inputId),
                   ui = ui,
                   immediate = T)
 
