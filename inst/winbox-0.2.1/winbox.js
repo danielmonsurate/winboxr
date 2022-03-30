@@ -164,7 +164,7 @@ function WinBox(params, _title){
     x = x ? parse(x, max_width, width) : left;
     y = y ? parse(y, max_height, height) : top;
 
-    index = index || 1000;
+    index = index || 2000;
 
     this.dom.id =
     this.id = id || ("winbox-" + (++id_counter));
