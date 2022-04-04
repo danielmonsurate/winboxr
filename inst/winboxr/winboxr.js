@@ -19,8 +19,9 @@ $(function () {
         left: data.left,
         html: data.html,
         onresize: function(){
-          var p = this.body.querySelector(".plotly");
-          if(p) {
+          var plots = this.body.querySelectorAll(".plotly");
+          for (i = 0; i < plots.length; ++i) {
+            var p = plots[i];
             setTimeout(Plotly.relayout, 200, p, {autosize: true})
           }
         }
