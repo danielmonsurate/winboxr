@@ -18,7 +18,6 @@ $(function () {
         bottom: data.bottom,
         left: data.left,
         html: data.html,
-        mount: if(data.mount) {document.querySelector(data.mount).cloneNode(true)} else {null},
         onresize: function(){
           var p = this.body.querySelector(".plotly");
           if(p) {

@@ -18,7 +18,6 @@
 #' @param bottom The position from the bottom  (pixels).
 #' @param left The position from the left  (pixels).
 #' @param html The innerHTML for the winbox.
-#' @param mount The element to mount into the winbox.
 #' @param ui The shiny ui to insert into the winbox.
 #'
 #' @export
@@ -41,7 +40,6 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
                    bottom = NULL,
                    left = NULL,
                    html = NULL,
-                   mount = NULL,
                    ui = NULL) {
 
 
@@ -62,7 +60,6 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
          right = right,
          bottom = bottom,
          left = left,
-         mount = mount,
          html = html)
   )
 
