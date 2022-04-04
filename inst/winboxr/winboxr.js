@@ -18,7 +18,7 @@ $(function () {
         bottom: data.bottom,
         left: data.left,
         html: data.html,
-        mount: document.querySelector(data.mount).cloneNode(data.mount_clone),
+        mount: document.querySelector(data.mount).cloneNode(true),
         onresize: function(){
           var p = this.body.querySelector(".plotly");
           if(p) {

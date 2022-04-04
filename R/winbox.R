@@ -19,7 +19,6 @@
 #' @param left The position from the left  (pixels).
 #' @param html The innerHTML for the winbox.
 #' @param mount The element to mount into the winbox.
-#' @param mount_clone Whether to clone the mounted element.
 #' @param ui The shiny ui to insert into the winbox.
 #'
 #' @export
@@ -43,7 +42,6 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
                    left = NULL,
                    html = NULL,
                    mount = NULL,
-                   mount_clone = TRUE,
                    ui = NULL) {
 
 
@@ -65,7 +63,6 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
          bottom = bottom,
          left = left,
          mount = mount,
-         mount_clone = mount_clone,
          html = html)
   )
 
