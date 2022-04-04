@@ -40,6 +40,7 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
                    bottom = NULL,
                    left = NULL,
                    html = NULL,
+                   mount = NULL,
                    ui = NULL) {
 
 
@@ -60,6 +61,7 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
          right = right,
          bottom = bottom,
          left = left,
+         mount = mount,
          html = html)
   )
 
