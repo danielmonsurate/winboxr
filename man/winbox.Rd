@@ -23,7 +23,6 @@ winbox(
   bottom = NULL,
   left = NULL,
   html = NULL,
-  mount = NULL,
   ui = NULL
 )
 }
@@ -63,8 +62,6 @@ winbox(
 \item{left}{The position from the left  (pixels).}
 
 \item{html}{The innerHTML for the winbox.}
-
-\item{mount}{The element to mount into the winbox.}
 
 \item{ui}{The shiny ui to insert into the winbox.}
 }

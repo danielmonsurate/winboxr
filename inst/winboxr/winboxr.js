@@ -99,6 +99,7 @@ $.extend(winboxBinding, {
   },
 
   subscribe: function(el, callback) {
+
     $(el).on('change.winboxBinding', function(event){
       callback();
     });
@@ -118,10 +119,18 @@ $.extend(winboxBinding, {
       Shiny.setInputValue(event.currentTarget.winbox.id + "_closed", 1, {priority: "event"});
     });
 
+  },
+
+   unsubscribe: function(el) {
+
+   $(el).off(".winbox");
+   $(el).off(".winboxBinding");
+
   }
 
 });
 
+debugger;
 Shiny.inputBindings.register(winboxBinding);
 
 

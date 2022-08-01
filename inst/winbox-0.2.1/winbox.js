@@ -895,10 +895,13 @@ WinBox.prototype.close = function(force) {
         remove_min_stack(this);
     }
 
+    $(this.dom).trigger("closed");
+    Shiny.unbindAll();
+
     this.unmount();
     this.dom.parentNode.removeChild(this.dom);
 
-     $(this.dom).trigger("closed");
+    Shiny.bindAll();
 
     if(last_focus === this){
 
