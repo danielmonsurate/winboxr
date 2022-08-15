@@ -896,12 +896,12 @@ WinBox.prototype.close = function(force) {
     }
 
     $(this.dom).trigger("closed");
-    Shiny.unbindAll();
+    /*Shiny.unbindAll();*/
 
     this.unmount();
     this.dom.parentNode.removeChild(this.dom);
 
-    Shiny.bindAll();
+    /*Shiny.bindAll();*/
 
     if(last_focus === this){
 
