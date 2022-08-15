@@ -130,7 +130,7 @@ $.extend(winboxBinding, {
 
 });
 
-debugger;
+
 Shiny.inputBindings.register(winboxBinding);
 
 
