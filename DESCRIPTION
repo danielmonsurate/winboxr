@@ -1,7 +1,7 @@
 Package: winboxr
 Type: Package
 Title: An R wrapper for the WinBox.js window manager
-Version: 0.1.1
+Version: 0.1.2
 Author: Daniel Monsurate
 Maintainer: Daniel Monsurate <email@email.com>
 Description: Use the winbox.js window manager in Shiny dashboards.
