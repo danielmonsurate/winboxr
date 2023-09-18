@@ -1,11 +1,3 @@
-html {
-  height: 100%!important;
-}
-body {
-  min-height: 100%!important;
-  height: 100%!important;
-}
-
 .winbox.my-theme{
     background: #fff;
 }
