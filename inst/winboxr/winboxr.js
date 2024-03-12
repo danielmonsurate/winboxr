@@ -28,7 +28,7 @@ $(function () {
     });
 
     if  (data.fill === true) {
-      query = "#" + data.id + " .wb-body";
+      var query = "#" + data.id + " .wb-body";
       $( query ).addClass( "html-fill-item html-fill-container" );
     }
 
