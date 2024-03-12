@@ -28,7 +28,8 @@ $(function () {
     });
 
     if  (data.fill === true) {
-      $( ".wb-body" ).addClass( "html-fill-item html-fill-container" );
+      query = "#" + data.id + " .wb-body";
+      $( query ).addClass( "html-fill-item html-fill-container" );
     }
 
     console.log(`Winbox created`);
