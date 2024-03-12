@@ -40,7 +40,8 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
                    bottom = NULL,
                    left = NULL,
                    html = NULL,
-                   ui = NULL) {
+                   ui = NULL,
+                   fill = FALSE) {
 
 
   message <- dropNulls(
@@ -60,7 +61,8 @@ winbox <- function(session = shiny::getDefaultReactiveDomain(),
          right = right,
          bottom = bottom,
          left = left,
-         html = html)
+         html = html,
+         fill = fill)
   )
 
   session$sendCustomMessage("create-winbox", message)
